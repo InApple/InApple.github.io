@@ -1,0 +1,97 @@
+<!doctype html> <!-- timeTable.html -->
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<style> table, th, tr,td{
+  border:1px solid black; 
+  border-collapse:collaspse; 
+}
+</style><!-- border-collapse:collase 단선으로, 반대는 separate -->
+<title>HTML5 테이블 테스트 실습</title></head>
+<body>
+<table>
+
+<tr style="background-color:#D0D0D0">
+ <th>시간</th>
+ <th>월</th>
+ <th>화</th>
+ <th>수</th>
+ <th>목</th>
+ <th>금</th>
+</tr>
+
+<tr>
+ <th>1교시</th>
+ <td>-</td>
+ <td style="background-color:#25B1F5">시스템 분석 및 설계</td>
+ <td>-</td>
+ <td>-</td>
+ <td>-</td>
+</tr>
+
+<tr>
+ <th>2교시</th>
+ <td>-</td>
+ <td>-</td>
+ <td rowspan="2" style="background-color:#25B1F5">시스템 분석 및 설계</td>
+ <td>-</td>
+ <td>-</td>
+</tr>
+
+<tr>
+ <th>3교시</th>
+  <td>-</td>
+ <td style="background-color:#EEEE49">영상처리</td>
+ <td rowspan="2" style="background-color:#EE7F49">인터넷프로그래밍</td>
+ <td>-</td>
+</tr>
+
+<tr>
+ <th>4교시</th>
+ <td>-</td>
+ <td>-</td>
+ <td rowspan="3" style="background-color:#EE4949">>일본문학의 이해</td>
+ <td style="background-color:#6A6AE9">캡스톤 디자인</td>
+</tr>
+
+<tr>
+ <th>5교시</th>
+ <td rowspan="2" style="background-color:#EEEE49">영상처리</td>
+ <td rowspan="2" style="background-color:#6A6AE9">캡스톤 디자인</td>
+ <td rowspan="2" style="background-color:#7F49EE">임베디드 소프트웨어</td>
+ <td>-</td>
+</tr>
+
+<tr>
+ <th>6교시</th>
+ <td>-</td>
+</tr>
+
+<tr>
+ <th>7교시</th>
+ <td rowspan="2" style="background-color:#7F49EE">임베디드 소프트웨어</td>
+ <td rowspan="3" style="background-color:#EE497F">정치학과 경제학의 대화</td>
+ <td>-</td>
+ <td rowspan="2"style="background-color:#AAE78A">캠퍼스 멘토링</td>
+ <td>-</td>
+</tr>
+
+<tr>
+ <th>8교시</th>
+  <td rowspan="2" style="background-color:#EE7F49">인터넷프로그래밍</td>
+ <td>-</td>
+
+</tr>
+
+<tr>
+ <th>9교시</th>
+ <td>-</td>
+  <td>-</td>
+   <td>-</td>
+
+</tr>
+
+</table>
+</body>
+</html>
