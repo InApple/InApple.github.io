@@ -1,0 +1,141 @@
+<!doctype  html>  <!-- Main.html -->
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<style>
+
+  header, nav, section, article, aside, footer
+  {border:1px solid gray; margin:5px; padding:8px; width:1000px;}
+  haeder {font-family:"arial", "MS Verdana", sans-serif;}
+  header h2 { float:left; border:solid 1px gray; margin:0; padding:0;}
+  header #headMenu { float:right; border:solid 1px gray; margin:0; }
+  .banner {width: 100%; height: 200px; overflow: hidden; position: relative; object-fit: cover;  z-index: -1;}
+  header ul {margin:0; padding:0;}
+  header ul li {display:inline; margin:5px;}
+  header img { width:990px; height:200px; }
+   
+  nav { text-align:center; position: fixed;   top: 0;   left: 0;  bottom: 0;  background: #383e49;  color: #9aa3a8;  width: 200px;  font-family:"arial", sans-serif;  line-height:200%; font-size:150%;}
+  nav #floater {  float: left;   height: 30%;   margin-bottom: -120px;}
+  
+  nav #content {  clear: both;   height: 240px;   position: relative;}
+  nav ul {  overflow: hidden;  display: block;  width: 200px;  list-style-type: none;  padding: 0;  margin: 0; }
+  nav ul li {margin:5px; position: relative;}
+  .MyPhoto {width: 100px; height: 100px; object-fit: cover; object-position: top; border-radius: 50%;}
+  nav a:link {  color:white; background-color:transparent; text-decoration:none; }
+  nav a:visited {  color:white; background-color:transparent; text-decoration:none; }
+  nav a:hover {  color:yellow; background-color:transparent; text-decoration:none;}
+  nav a:active {  color:blue; background-color:transparent; text-decoration:none; }  
+
+  body { background-color:#EEEEEE; }
+ 
+
+  main {position: absolute; top: 0;  left: 220px; bottom:0; padding : 5px;   z-index: -1;}
+  
+  section {width:750px; height:750px; float:left; padding: 5px; background-color:white; }
+  section div     {display:auto;  float:left; margin: 25px; padding 20px; width: 200px; height : 300px;  z-index: -1; text-align:center;}
+  section div div {display:auto; margin: 0px; padding 0px; width: 200px; height : 100px; padding: 0 0 ;margin: 0;  border:1px solid blue}
+  .IndexPhoto {width: 100%; height: 100%; object-fit: cover; object-position: top;}
+  
+  aside {width:221px; float:left; line-height:30px; }
+  aside ul {margin:0; padding:0;}
+  aside ul li {display:block; margin:5px;}
+  aside ul li img { width:50px; height:50px; }
+  
+  footer {height:50px; clear:both; background-color:white;}
+  a:link {  color:black; background-color:transparent; text-decoration:none; }
+  a:visited {  color:gray; background-color:transparent; text-decoration:none; }
+  a:hover {    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);}
+  a:active {  color:blue; background-color:transparent; text-decoration:none; }  
+
+ 
+</style>
+<title>시멘틱 학습</title></head>
+<body>
+  
+  <nav>
+  <div id="floater"></div>
+  <div id="content">
+    <img class='MyPhoto' src="https://InApple.github.io/Portfolio/bonobono.jpg" />
+    <h4>InApple's Portfolio</h4>
+    <ul>
+    <li><a href="https://InApple.github.io/Portfolio/Profile.html">Profile</a></li>
+    <li><a href="https://InApple.github.io/Portfolio/TimeTable.html">TIMETABLE</a></li>
+    <li><a href="https://InApple.github.io/Portfolio/Project.html">PROJECT</a></li>
+    <li><a href="https://InApple.github.io/Portfolio/CONTECT.html">CONTECT</a></li>
+    </ul>
+  </div>
+  </nav>
+  
+  
+  <main>
+    <header>
+    <h2 ><a href="https://InApple.github.io/Portfolio/main.html">InApple's Portfolio</a></h2>
+    <img class='banner' src="https://InApple.github.io/Portfolio/sns.jpg" alt="배너"/>
+  </header>  
+
+ <section>    <!-- main 이미지 앵커를 이용한 메뉴 이동? -->
+ 
+  <div id = "Inapple"; >
+  <a href=https://InApple.github.io/Portfolio/Profile.html>
+  <img class='IndexPhoto' src="https://InApple.github.io/Portfolio/apple.jpg" alt="프로그래밍"/>
+  <h3>  Who is InApple?  </h3>
+  </a>
+  </div>
+  
+  <div id = "Capstone">
+   <a href=https://InApple.github.io/Portfolio/Profile.html>
+  <img class='IndexPhoto' src="https://InApple.github.io/Portfolio/capstone.JPG" alt="프로그래밍"/>
+   <h3>Capstone Design</h3> 
+  </a>
+  </div> 
+  
+   <div id = "timetable">
+   <a href=https://InApple.github.io/Portfolio/Profile.html>
+  <img class='IndexPhoto' src="https://InApple.github.io/Portfolio/timetable.jpg" alt="프로그래밍"/>
+   <h3>TIMETABLE</h3> 
+  </a>
+  </div> 
+  
+  <div id = "Programming">
+  <a href=https://InApple.github.io/Portfolio/Project.html>
+  <img class='IndexPhoto' src="https://InApple.github.io/Portfolio/programing.jpg" alt="프로그래밍"/>
+
+  <h3>Programming Project</h3>
+    </a>
+  </div> 
+  
+    <div id = "contect">
+  <a href=https://InApple.github.io/Portfolio/CONTECT.html>
+  <img class='IndexPhoto' src="https://InApple.github.io/Portfolio/social.jpg" alt="프로그래밍"/>
+
+  <h3>CONTECT ME</h3>
+    </a>
+  </div> 
+  
+
+ </section>   
+  
+ <aside>
+ 
+  <ul>
+   <h3>
+   recent...
+   </h3> 
+   <li>2018-06-07 
+<ol>
+<li><a href="https://InApple.github.io/20180516/GetElementsByName.html" target="_blank">name에 의한 DOM 접근.html</a></li>
+<li><a href="https://InApple.github.io/20180516/GetElementsByTagName.html" target="_blank">Tag name에 의한 DOM 접근.html</a></li>
+<li><a href="https://InApple.github.io/20180516/GetElementsByDom.html" target="_blank">DOM 접근.html</a></li>
+</ol>
+</li>
+
+   </ul>
+  </aside>
+
+  <footer>
+    <p>&copy; 2018  Made by InApple.  All rights reserved.</p>
+  </footer> 
+  </main>
+</body>
+</html> 
