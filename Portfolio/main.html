@@ -31,18 +31,20 @@
 
   main {position: absolute; top: 0;  left: 220px; bottom:0; padding : 5px;   z-index: -1;}
   
-  section {width:750px; float:left; padding: 5px; background-color:white;}
-  section div {display:auto; border:1px solid blue; float:left; margin: 20px; padding 5px; width: 200px; height : 300px;  z-index: -1;}
-  section div div {display:auto; border:1px solid blue; margin: 20px; padding 5px; width: 200px; height : 100px; padding: 0 0 ;margin: 0; }
+  section {width:750px; height:750px; float:left; padding: 5px; background-color:white; }
+  section div     {display:auto;  float:left; margin: 30px; padding 20px; width: 200px; height : 300px;  z-index: -1; text-align:center;}
+  section div div {display:auto; margin: 0px; padding 0px; width: 200px; height : 100px; padding: 0 0 ;margin: 0;  border:1px solid blue}
+  .IndexPhoto {width: 100%; height: 100%; object-fit: cover; object-position: top;}
+  
   aside {width:221px; float:left; line-height:30px; }
   aside ul {margin:0; padding:0;}
   aside ul li {display:block; margin:5px;}
   aside ul li img { width:50px; height:50px; }
   
   footer {height:50px; clear:both; }
-  a:link {  color:gray; background-color:transparent; text-decoration:none; }
+  a:link {  color:black; background-color:transparent; text-decoration:none; }
   a:visited {  color:gray; background-color:transparent; text-decoration:none; }
-  a:hover {  color:yellow; background-color:transparent; text-decoration:none;}
+  a:hover {    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);}
   a:active {  color:blue; background-color:transparent; text-decoration:none; }  
 
  
@@ -53,11 +55,12 @@
   <nav>
   <div id="floater"></div>
   <div id="content">
-    <img class='MyPhoto' src="InApple.github.io/Portfolio/bonobono.jpg" />
+    <img class='MyPhoto' src="https://InApple.github.io/Portfolio/bonobono.jpg" />
     <ul>
-    <li><a href="https://www.w3.org/TR/html5/"  target="_blank">Profile</a></li>
-    <li><a href="http://jquery.com/"  target="_blank">TimeTable</a></li>
-    <li><a href="https://jquerymobile.com/"  target="_blank">Project</a></li>
+    <li><a href="https://InApple.github.io/Portfolio/Profile.html">Profile</a></li>
+    <li><a href="https://InApple.github.io/Portfolio/TimeTable.html">TIMETABLE</a></li>
+    <li><a href="https://InApple.github.io/Portfolio/Project.html">PROJECT</a></li>
+    <li><a href="https://InApple.github.io/Portfolio/CONTECT.html">CONTECT</a></li>
     </ul>
   </div>
   </nav>
@@ -65,35 +68,50 @@
   
   <main>
     <header>
-    <h2><a href="InApple.github.io/Portfolio/main.html">InApple's Portfolio</a></h2>
+    <h2><a href="https://InApple.github.io/Portfolio/main.html">InApple's Portfolio</a></h2>
 	  <ul id="head Menu">
     <li>로그인</li> | <li> <a href="">회원가입</a> </li> | <li>사이트맵</li></ul>
     <img src="" alt=""/>
   </header>  
 
  <section>    <!-- main 이미지 앵커를 이용한 메뉴 이동? -->
+ 
   <div id = "Inapple">
-  <li><a href="https://www.google.com"><img src="../20180419/googlePlus.png" alt="구글"/></a></li>
-   <div>Who is InApple?</div>
+  <a href=https://www.google.com>
+  <img class='IndexPhoto' src="https://InApple.github.io/Portfolio/apple.jpg" alt="프로그래밍"/>
+  <h3>  Who is InApple?  </h3>
+  </a>
   </div>
   
   <div id = "Capstone">
-  <li><a href=https://www.google.com><img src="InApple.github.io/Portfolio/programing.jpg" alt="구글"/></a></li>
-   <div>Capstone Design</div>
-     
+   <a href=https://www.google.com>
+  <img class='IndexPhoto' src="https://InApple.github.io/Portfolio/capstone.JPG" alt="프로그래밍"/>
+   <h3>Capstone Design</h3> 
+  </a>
   </div> 
   
   <div id = "Programming">
-  <li><a href=https://www.google.com><img src="InApple.github.io/Portfolio/programing.jpg" alt="구글"/></a></li>
-   <div>Programming PorJect</div>
+  <a href=https://www.google.com>
+  <img class='IndexPhoto' src="https://InApple.github.io/Portfolio/programing.jpg" alt="프로그래밍"/>
+
+  <h3>Programming PorJect</h3>
+    </a>
   </div> 
   
+    <div id = "contect">
+  <a href=https://www.google.com>
+  <img class='IndexPhoto' src="https://InApple.github.io/Portfolio/social.jpg" alt="프로그래밍"/>
 
+  <h3>CONTECT ME</h3>
+    </a>
+  </div> 
   
  </section>   
   
-  
  <aside>
+ <ul>
+ 
+ </ul>
      <ul>
       <li><a href=https://www.google.com><img src="../20180419/googlePlus.png" alt="구글"/></a></li>
       <li><a href=https://www.facebook.com><img src="../20180419/facebookOne.png" alt="페이스북"/></a></li>
