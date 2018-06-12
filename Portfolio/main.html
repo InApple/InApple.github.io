@@ -8,8 +8,9 @@
   header, nav, section, article, aside, footer
   {border:1px solid gray; margin:5px; padding:8px; width:1000px;}
   haeder {font-family:"arial", "MS Verdana", sans-serif;}
-  header h2 { float:left; border:solid 1px gray; margin:0 0 0 0; }
-  header #headMenu { float:right; border:solid 1px gray; margin:20px 0 0 0; }
+  header h2 { float:left; border:solid 1px gray; margin:0; padding:0;}
+  header #headMenu { float:right; border:solid 1px gray; margin:0; }
+  .banner {width: 100%; height: 200px; overflow: hidden; object-fit: cover; object-position: top; z-index: -1;}
   header ul {margin:0; padding:0;}
   header ul li {display:inline; margin:5px;}
   header img { width:990px; height:200px; }
@@ -56,6 +57,7 @@
   <div id="floater"></div>
   <div id="content">
     <img class='MyPhoto' src="https://InApple.github.io/Portfolio/bonobono.jpg" />
+    <h4>    InApple's Portfolio    </h4>
     <ul>
     <li><a href="https://InApple.github.io/Portfolio/Profile.html">Profile</a></li>
     <li><a href="https://InApple.github.io/Portfolio/TimeTable.html">TIMETABLE</a></li>
@@ -68,10 +70,8 @@
   
   <main>
     <header>
-    <h2><a href="https://InApple.github.io/Portfolio/main.html">InApple's Portfolio</a></h2>
-	  <ul id="head Menu">
-    <li>로그인</li> | <li> <a href="">회원가입</a> </li> | <li>사이트맵</li></ul>
-    <img src="" alt=""/>
+    <h2 ><a href="https://InApple.github.io/Portfolio/main.html">InApple's Portfolio</a></h2>
+    <img class='banner' src="https://InApple.github.io/Portfolio/sns.jpg" alt="배너"/>
   </header>  
 
  <section>    <!-- main 이미지 앵커를 이용한 메뉴 이동? -->
@@ -106,19 +106,26 @@
     </a>
   </div> 
   
+
  </section>   
   
  <aside>
- <ul>
  
- </ul>
-     <ul>
-      <li><a href=https://www.google.com><img src="../20180419/googlePlus.png" alt="구글"/></a></li>
-      <li><a href=https://www.facebook.com><img src="../20180419/facebookOne.png" alt="페이스북"/></a></li>
-      <li><a href=https://www.twitter.com><img src="../20180419/twitterYou.png" alt="트위터"/></a></li>
-     </ul>
+  <ul>
+   <h3>
+   recent...
+   </h3> 
+   <li>2018-06-07 
+<ol>
+<li><a href="https://InApple.github.io/20180516/GetElementsByName.html" target="_blank">name에 의한 DOM 접근.html</a></li>
+<li><a href="https://InApple.github.io/20180516/GetElementsByTagName.html" target="_blank">Tag name에 의한 DOM 접근.html</a></li>
+<li><a href="https://InApple.github.io/20180516/GetElementsByDom.html" target="_blank">DOM 접근.html</a></li>
+</ol>
+</li>
+
+   </ul>
   </aside>
-  
+
   <footer>
     <p>&copy; 2018  Made by InApple.  All rights reserved.</p>
   </footer> 
