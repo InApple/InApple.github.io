@@ -1,4 +1,4 @@
-<!doctype  html>  <!-- Main.html -->
+<!doctype  html>  <!-- TimeTable.html -->
 <html>
 <head>
 <meta charset="utf-8"/>
@@ -48,11 +48,47 @@
   a:hover {    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);}
   a:active {  color:blue; background-color:transparent; text-decoration:none; }  
 
- 
+ table.type03 {
+    border-collapse: collapse;
+    text-align: center;
+    line-height: 1.5;
+    border-top: 1px solid #ccc;
+    border-left: 3px solid #369;
+    margin : 20px 10px;
+}
+table.type03 th {
+    width: 147px;
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    color: #153d73;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+ font-size: large;
+}
+table.type03 td {
+    width: 349px;
+    padding: 10px;
+    color: white;
+    vertical-align: top;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+font-size: 15px;
+}
+ table, th, tr,td{
+  border:1px solid black; 
+  border-collapse:collaspse; 
+  }
+  .subject1{background-color:#25B1F5;}
+  .subject2{background-color:#EEEE49;}
+  .subject3{background-color:#EE7F49;}
+  .subject4{background-color:#EE4949;}
+  .subject5{background-color:#6A6AE9;}
+  .subject6{background-color:#7F49EE;}
+  .subject7{background-color:#EE497F;}
 </style>
 <title>시멘틱 학습</title></head>
 <body>
-  
   <nav>
   <div id="floater"></div>
   <div id="content">
@@ -74,50 +110,94 @@
     <img class='banner' src="https://InApple.github.io/Portfolio/sns.jpg" alt="배너"/>
   </header>  
 
- <section>    <!-- main 이미지 앵커를 이용한 메뉴 이동? -->
- 
-  <div id = "Inapple"; >
-  <a href=https://InApple.github.io/Portfolio/Profile.html>
-  <img class='IndexPhoto' src="https://InApple.github.io/Portfolio/apple.jpg" alt="프로그래밍"/>
-  <h3>  Who is InApple?  </h3>
-  </a>
-  </div>
-  
-  <div id = "Capstone">
-   <a href=https://InApple.github.io/Portfolio/Profile.html>
-  <img class='IndexPhoto' src="https://InApple.github.io/Portfolio/capstone.JPG" alt="프로그래밍"/>
-   <h3>Capstone Design</h3> 
-  </a>
-  </div> 
-  
-   <div id = "timetable">
-   <a href=https://InApple.github.io/Portfolio/Profile.html>
-  <img class='IndexPhoto' src="https://InApple.github.io/Portfolio/timetable.jpg" alt="프로그래밍"/>
-   <h3>TIMETABLE</h3> 
-  </a>
-  </div> 
-  
-  <div id = "Programming">
-  <a href=https://InApple.github.io/Portfolio/Project.html>
-  <img class='IndexPhoto' src="https://InApple.github.io/Portfolio/programing.jpg" alt="프로그래밍"/>
+ <section>    <!-- main 테이블을 이용한 자기 이력서 -->
+ <section>
+   
+<tr style="background-color:#D0D0D0">
+ <th>시간</th>
+ <th>월</th>
+ <th>화</th>
+ <th>수</th>
+ <th>목</th>
+ <th>금</th>
+</tr>
 
-  <h3>Programming Project</h3>
-    </a>
-  </div> 
-  
-    <div id = "contect">
-  <a href=https://InApple.github.io/Portfolio/CONTECT.html>
-  <img class='IndexPhoto' src="https://InApple.github.io/Portfolio/social.jpg" alt="프로그래밍"/>
+<tr>
+ <th>1교시</th>
+ <td>-</td>
+ <td class="subject1">시스템 분석 및 설계</td>
+ <td>-</td>
+ <td>-</td>
+ <td>-</td>
+</tr>
 
-  <h3>CONTECT ME</h3>
-    </a>
-  </div> 
-  
+<tr>
+ <th>2교시</th>
+ <td>-</td>
+ <td>-</td>
+ <td rowspan="2" class="subject1">시스템 분석 및 설계</td>
+ <td>-</td>
+ <td>-</td>
+</tr>
 
+<tr>
+ <th>3교시</th>
+  <td>-</td>
+ <td class="subject2">영상처리</td>
+ <td rowspan="2" class="subject3">인터넷프로그래밍</td>
+ <td>-</td>
+</tr>
+
+<tr>
+ <th>4교시</th>
+ <td>-</td>
+ <td>-</td>
+ <td rowspan="3" class="subject4">일본 문학의 이해</td>
+ <td  class="subject5">캡스톤 디자인</td>
+</tr>
+
+<tr>
+ <th>5교시</th>
+ <td rowspan="2" class="subject2">영상처리</td>
+ <td rowspan="2" class="subject5">캡스톤 디자인</td>
+ <td rowspan="2" class="subject6">임베디드 소프트웨어</td>
+ <td>-</td>
+</tr>
+
+<tr>
+ <th>6교시</th>
+ <td>-</td>
+</tr>
+
+<tr>
+ <th>7교시</th>
+ <td rowspan="2" class="subject6">임베디드 소프트웨어</td>
+ <td rowspan="3" class="subject7">정치학과 경제학의 대화</td>
+ <td>-</td>
+ <td rowspan="2" class="subject5">캡스톤 디자인</td>
+ <td>-</td>
+</tr>
+
+<tr>
+ <th>8교시</th>
+  <td rowspan="2" class="subject3">인터넷프로그래밍</td>
+ <td>-</td>
+
+</tr>
+
+<tr>
+ <th>9교시</th>
+ <td>-</td>
+  <td>-</td>
+   <td>-</td>
+
+</tr>
+ </section>
  </section>   
   
+  
+  
  <aside>
- 
   <ul>
    <h3>
    recent...
