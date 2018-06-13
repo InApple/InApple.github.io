@@ -1,4 +1,4 @@
-<!doctype  html>  <!-- Main.html -->
+<!doctype  html>  <!-- Project.html -->
 <html>
 <head>
 <meta charset="utf-8"/>
@@ -32,10 +32,13 @@
 
   main {position: absolute; top: 0;  left: 220px; bottom:0; padding : 5px;   z-index: -1;}
   
-  section {width:750px; height:750px; float:left; padding: 5px; background-color:white; }
+  section {width:750px; height:1500px; float:left; padding: 5px; background-color:white; }
   section div     {display:auto;  float:left; margin: 25px; padding 20px; width: 200px; height : 300px;  z-index: -1; text-align:center;}
   section div div {display:auto; margin: 0px; padding 0px; width: 200px; height : 100px; padding: 0 0 ;margin: 0;  border:1px solid blue}
   .IndexPhoto {width: 100%; height: 100%; object-fit: cover; object-position: top;}
+  
+  .table {width: 300px; height: 300px; overflow: hidden; position: relative; object-fit: cover;  z-index: -1;}
+  
   
   aside {width:221px; float:left; line-height:30px; }
   aside ul {margin:0; padding:0;}
@@ -48,11 +51,21 @@
   a:hover {    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);}
   a:active {  color:blue; background-color:transparent; text-decoration:none; }  
 
- 
+ table, th, tr,td{ border:1px solid black; padding:0; margin:0; }
+  .subject1{background-color:#25B1F5;}
+  .subject2{background-color:#EEEE49;}
+  .subject3{background-color:#EE7F49;}
+  .subject4{background-color:#EE4949;}
+  .subject5{background-color:#6A6AE9;}
+  .subject6{background-color:#7F49EE;}
+  .subject7{background-color:#EE497F;}
+ table.project th{ width: 110px; color:#333333 }
+ table.project td{ width: 70%;}
+ table.image th{ width: 300px; color:#333333 }
+ table.image img{ width: 300px; color:#333333 }
 </style>
 <title>시멘틱 학습</title></head>
 <body>
-  
   <nav>
   <div id="floater"></div>
   <div id="content">
@@ -74,50 +87,89 @@
     <img class='banner' src="https://InApple.github.io/Portfolio/sns.jpg" alt="배너"/>
   </header>  
 
- <section>    <!-- main 이미지 앵커를 이용한 메뉴 이동? -->
- 
-  <div id = "Inapple"; >
-  <a href=https://InApple.github.io/Portfolio/Profile.html>
-  <img class='IndexPhoto' src="https://InApple.github.io/Portfolio/apple.jpg" alt="프로그래밍"/>
-  <h3>  Who is InApple?  </h3>
-  </a>
-  </div>
-  
-  <div id = "Capstone">
-   <a href=https://InApple.github.io/Portfolio/Profile.html>
-  <img class='IndexPhoto' src="https://InApple.github.io/Portfolio/capstone.JPG" alt="프로그래밍"/>
-   <h3>Capstone Design</h3> 
-  </a>
-  </div> 
-  
-   <div id = "timetable">
-   <a href=https://InApple.github.io/Portfolio/Profile.html>
-  <img class='IndexPhoto' src="https://InApple.github.io/Portfolio/timetable.jpg" alt="프로그래밍"/>
-   <h3>TIMETABLE</h3> 
-  </a>
-  </div> 
-  
-  <div id = "Programming">
-  <a href=https://InApple.github.io/Portfolio/Project.html>
-  <img class='IndexPhoto' src="https://InApple.github.io/Portfolio/programing.jpg" alt="프로그래밍"/>
+ <section>    <!-- main 테이블을 이용한 자기 이력서 -->
+   
+<ol>
+<h1><li>프로젝트 정보</li></h1>
+<table class="project"><tr>
+<th>프로젝트 소개</th>
+<td colspan="2"><ul>
+<li>본 프로젝트는 기존의 번역기를 이용하여 문서 이미지 파일이나, 자막등의 이미지를 번역하여 실시간으로 출력하는 프로그램 제작을 목표로 함.</li>
+</ul></td>
+</tr>
+<tr>
+<th>주요기능</th>
+<td colspan="2"> <ol>
+ <li> 사용자가 화면 상의 일정한 구역을 지정하여 번역. </li>
+ <li>이미지상의 문자열을 추출 및 번역한 뒤 화면에 재출력. </li>
+ <li> 번역되는 텍스트는 자연스러운 출력을 위해 기존 이미지의 텍스트를 지운 뒤 출력.. </li>
+ <li> 이미지를 읽는 방법(OCR) 및 이미지 보정은 딥러닝을 이용. </li>
+</ol>
+</td>
+</tr>
 
-  <h3>Programming Project</h3>
-    </a>
-  </div> 
-  
-    <div id = "contect">
-  <a href=https://InApple.github.io/Portfolio/CONTECT.html>
-  <img class='IndexPhoto' src="https://InApple.github.io/Portfolio/social.jpg" alt="프로그래밍"/>
+<tr>
+<th rowspan ="4">적용기술</th>
+<th>API</th> <td>구글 혹은 네이버 번역 API</td>
+</tr>
+<tr><th>인공지능</th><td>텍스트 인식 성능을 높이기 위한 딥러닝 기술 </td></tr>
+<tr><th>영상처리</th><td>번역 텍스트를 자연스럽게 출력하기 위해 기존 이미지에서 텍스트를 지워 보정하는 기술</td></tr>
+<tr><th>기타</th><td>윈도우 폼 디자인 등의 GUI 디자인 기술</td></tr>
+</table>
 
-  <h3>CONTECT ME</h3>
-    </a>
-  </div> 
-  
 
+<h1><li>기대효과 및 활용분야</li></h1>
+  <table class="project">
+  <tr>
+    <th rowspan="2">프로그램의<br/>편의성 </th>
+    <td>1. 여러 가지의 프로그램 없이 이미지를 읽어 그대로 화면에 출력시키는 편의성.</td>
+  </tr>
+  <tr>
+    <td>2. 화면의 모든 텍스트를 번역하는 것이 아닌 사용자가 직접 번역할 부분을 지정하여 번역함으로써 사용자 개인의 편의성을 높임.</td>    
+  </tr>
+  
+   <tr>
+    <th rowspan="2">다양한 활용</th>
+    <td>1. 사진이나 문서등의 이미지 문서만이 아닌 브라우저 자체 번역이 불가능한 사이트나, 영화 자막등 다양한 곳에서 활용 가능.</td>
+  </tr>
+  <tr>
+    <td><img class='table' src="https://InApple.github.io/Portfolio/translate.jpg.jpg" alt="번역 목표"/></td>    
+  </tr>
+
+  
+  <tr>
+    <th rowspan="3">접근성 용이 </th>
+    <td>1.단축기를 이용한 프로그램의 조작이 가능.</td>
+  </tr>
+  <tr>
+    <td>2. 백그라운드 프로그램으로 한번 실행 후 사용자가 종료 할때까지 지속적으로 번역을 실행.</td>    
+  </tr>
+   <tr>
+  <td>3. 영화 자막이나, 게임, 원서 등 프로그램에 대한 지식이 없어도 문자열 추출이 용이.</td>  
+  </tr>
+  </table>
+<h1><li>예상 결과물</li></h1>
+  <table class="image">
+  <tr>
+    <th>예상 결과물 이미지</th><th>설명</th>    
+  </tr>
+    <tr>
+    <th><img class='table' src="https://InApple.github.io/Portfolio/toystory.jpg" alt="토이스토리"/></th>
+    <td>데스크톱 환경에서 재생(팟플레이어)되는 영화의 영어자막을 출력, 번역한뒤 기존의 영어자막을 지운 후 한글로 출력.</td>
+  </tr>
+  <tr>
+    <th><img class='table' src="https://InApple.github.io/Portfolio/oz.jpg" alt="도로시의 마법사"/></th>    
+    <td>PDF, 이미지 문서를 일부 지정(레이아웃 지정) 후 문서 텍스트를 번역.</td>
+  </tr>
+  
+  </table>
+
+</ol>
  </section>   
   
+  
+  
  <aside>
- 
   <ul>
    <h3>
    recent...
