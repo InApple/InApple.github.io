@@ -1,4 +1,4 @@
-<!doctype  html>  <!-- Main.html -->
+<!doctype  html>  <!-- contect.html -->
 <html>
 <head>
 <meta charset="utf-8"/>
@@ -7,14 +7,12 @@
 
   header, nav, section, article, aside, footer
   {border:1px solid gray; margin:5px; padding:8px; width:1000px;}
-  haeder {font-family:"arial", "MS Verdana", sans-serif;}
-  header h2 { float:left; border:solid 1px gray; margin:0; padding:0;}
-  header #headMenu { float:right; border:solid 1px gray; margin:0; }
-  .banner {width: 100%; height: 200px; overflow: hidden; position: relative; object-fit: cover;  z-index: -1;}
+  header {background-image:url('https://InApple.github.io/Portfolio/sns.jpg');  width:100%; height:200px;}
+  header h2 { float:left; margin:0; padding:0; font-size: 40px; font-family:"arial", "MS Verdana", sans-serif;}
   header ul {margin:0; padding:0;}
   header ul li {display:inline; margin:5px;}
   header img { width:990px; height:200px; }
-   
+  header a:hover {    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);}
   nav { text-align:center; position: fixed;   top: 0;   left: 0;  bottom: 0;  background: #383e49;  color: #9aa3a8;  width: 200px;  font-family:"arial", sans-serif;  line-height:200%; font-size:150%;}
   nav #floater {  float: left;   height: 30%;   margin-bottom: -120px;}
   
@@ -32,10 +30,16 @@
 
   main {position: absolute; top: 0;  left: 220px; bottom:0; padding : 5px;   z-index: -1;}
   
-  section {width:750px; height:750px; float:left; padding: 5px; background-color:white; }
+  section {width:750px; height:650px; float:left; padding: 5px; background-color:white; text-align:center; }
+
   section div     {display:auto;  float:left; margin: 25px; padding 20px; width: 200px; height : 300px;  z-index: -1; text-align:center;}
   section div div {display:auto; margin: 0px; padding 0px; width: 200px; height : 100px; padding: 0 0 ;margin: 0;  border:1px solid blue}
   .IndexPhoto {width: 100%; height: 100%; object-fit: cover; object-position: top;}
+  
+  
+  div #floater {  float: left;   height: 50%;   margin-bottom: -120px;}
+  div #content {  clear: both;   height: 240px;   position: relative;}
+  div #inline {  clear: both;   height: 240px;   position: relative; list-style-type: none;  padding: 0;  margin: 0;}
   
   aside {width:221px; float:left; line-height:30px; }
   aside ul {margin:0; padding:0;}
@@ -48,11 +52,23 @@
   a:hover {    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);}
   a:active {  color:blue; background-color:transparent; text-decoration:none; }  
 
- 
+ table, th, tr,td{ border:1px solid black; padding:0; margin:0; }
+  .subject1{background-color:#25B1F5;}
+  .subject2{background-color:#EEEE49;}
+  .subject3{background-color:#EE7F49;}
+  .subject4{background-color:#EE4949;}
+  .subject5{background-color:#6A6AE9;}
+  .subject6{background-color:#7F49EE;}
+  .subject7{background-color:#EE497F;}
+ table.project th{ width: 110px; color:#333333 }
+ table.project td{ width: 70%;}
+ table.image th{ width: 300px; color:#333333 }
+ table.image img{ width: 300px;  height: 300px; color:#333333 }
+ .table {width: 300px; height: 300px; overflow: hidden; position: relative; object-fit:cover;}
+ .img{height:50%; width:50%;}
 </style>
 <title>시멘틱 학습</title></head>
 <body>
-  
   <nav>
   <div id="floater"></div>
   <div id="content">
@@ -65,59 +81,33 @@
     <li><a href="https://InApple.github.io/Portfolio/CONTECT.html">CONTECT</a></li>
     </ul>
   </div>
-  </nav>
-  
+  </nav>  
   
   <main>
     <header>
     <h2 ><a href="https://InApple.github.io/Portfolio/main.html">InApple's Portfolio</a></h2>
-    <img class='banner' src="https://InApple.github.io/Portfolio/sns.jpg" alt="배너"/>
   </header>  
 
- <section>    <!-- main 이미지 앵커를 이용한 메뉴 이동? -->
- 
-  <div id = "Inapple"; >
-  <a href=https://InApple.github.io/Portfolio/Profile.html>
-  <img class='IndexPhoto' src="https://InApple.github.io/Portfolio/apple.jpg" alt="프로그래밍"/>
-  <h3>  Who is InApple?  </h3>
-  </a>
-  </div>
-  
-  <div id = "Capstone">
-   <a href=https://InApple.github.io/Portfolio/Profile.html>
-  <img class='IndexPhoto' src="https://InApple.github.io/Portfolio/capstone.JPG" alt="프로그래밍"/>
-   <h3>Capstone Design</h3> 
-  </a>
-  </div> 
-  
-   <div id = "timetable">
-   <a href=https://InApple.github.io/Portfolio/Profile.html>
-  <img class='IndexPhoto' src="https://InApple.github.io/Portfolio/timetable.jpg" alt="프로그래밍"/>
-   <h3>TIMETABLE</h3> 
-  </a>
-  </div> 
-  
-  <div id = "Programming">
-  <a href=https://InApple.github.io/Portfolio/Project.html>
-  <img class='IndexPhoto' src="https://InApple.github.io/Portfolio/programing.jpg" alt="프로그래밍"/>
+ <section>    <!-- main 테이블을 이용한 자기 이력서 -->
 
-  <h3>Programming Project</h3>
-    </a>
-  </div> 
-  
-    <div id = "contect">
-  <a href=https://InApple.github.io/Portfolio/CONTECT.html>
-  <img class='IndexPhoto' src="https://InApple.github.io/Portfolio/social.jpg" alt="프로그래밍"/>
-
-  <h3>CONTECT ME</h3>
-    </a>
-  </div> 
-  
-
+    <h1>
+    CONTECT US
+    </h1>
+    <img src="https://InApple.github.io/Portfolio/social.png" border="0" usemap="#sns">
+    <map name="sns"> 
+    <area alt="유튜브" shape="circle" target="_blank" coords="102,92,70" href=https://www.youtube.com/>
+    <area alt="페이스북" shape="circle" target="_blank" coords="303,92,70" href=https://www.facebook.com/>
+    <area alt="구글+" shape="circle" target="_blank" coords="494,92,70" href=https://www.google.co.kr/>
+    <area alt="인스타그램" shape="circle" target="_blank" coords="100,284,70" href=https://www.instagram.com/>
+    <area alt="위키피디아" shape="circle" target="_blank" coords="303,284,70" href=https://www.wikipedia.org/>
+    <area alt="유튜브레드" shape="circle" target="_blank" coords="494,284,70" href=https://www.youtube.com/>
+    <area alt="트위터" shape="circle" target="_blank" coords="103,468,70" href=https://twitter.com/>
+    <area alt="인스타그램" shape="circle" target="_blank" coords="303,468,50" href=https://www.instagram.com>
+    <area alt="핀터레스트" shape="circle" target="_blank" coords="494,468,50" href=http://www.pinterest.com/>
+</map>
  </section>   
   
  <aside>
- 
   <ul>
    <h3>
    recent...
